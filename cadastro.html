@@ -1,0 +1,34 @@
+ <!--FORMULÁRIO DE CADASTRO-->
+ <div id="cadastro">
+    <form method="post" action="salvar.php"> 
+      <h1>Formulario</h1> 
+      <link href="cadastro.css" rel="stylesheet">
+      <p> 
+        <label for="descricao">Descrição:</label> <br>
+        <input id="descricao" name="descricao" required="required" type="text" />
+      </p>
+       
+      <p> 
+            <label for="conteudo">Conteudo:</label> <br>
+
+
+            <textarea id="conteudo" name="conteudo" type="textarea" placeholder="Digite seu conteudo"
+             rows="10" cols="160">
+
+            
+            </textarea>
+          
+      </p>
+    
+      <p>
+          <input type="date" name="dataEnvio">
+      
+     
+        </p>
+       
+     <p>
+        <input type="submit" value="Cadastrar"/> 
+      </p>
+       
+    </form>
+  </div>
