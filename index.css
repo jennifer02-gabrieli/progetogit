@@ -1,20 +1,78 @@
-table, th, td {
-    border: 1px solid black;
+/*** Estilo para doc3.html (Tabelas) ***/
+
+th {
+  font: 100% arial;
+  background-color: #efe;
+  border-collapse: collapse;
+  empty-cells: show;
+  border: 1px solid #7a7;
   }
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+
+td {
+  text-align: left;
+  font-weight: bold;
+  font-size: 200%;
+  border-bottom: .2em solid #4ca;
+  margin-bottom: .5em;
   }
-  th, td {
-    padding: 15px;
+
+
+/* basic shared rules */
+ td {
+  text-align: right;
+  padding-right: .5em;
   }
-  th {
-    text-align: left;
+
+td {
+  font-weight: bold;
+  padding-left: .5em;
   }
-  table {
-    border-spacing: 5px;
+
+
+/* header */
+td {
+  text-align: center;
+  color: blue;
   }
-  table#t01 {
-    width: 100%; 
-    background-color: #f1f1c1;
+
+td {
+  font-style: arial;
+  color: gray;
+  }
+
+/* fix size of superscript */
+td {
+  font-size: 75%;
+  }
+
+/* body */
+td {
+  background-color: #cef;
+  padding:.5em .5em .5em 3em;
+  }
+
+td {
+  content: ":";
+  }
+
+
+/* footer */
+td {
+  font-weight: bold;
+  }
+
+td  {
+  color:black ;
+  }
+
+#demo-table tfoot th:after {
+  content: ":";
+  }
+
+#demo-table > tfoot td {
+  background-color: #cee;
+  }
+
+#demo-table > tfoot > tr:first-child td {
+  border-top: .2em solid #7a7;
   }
