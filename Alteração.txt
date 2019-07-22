@@ -1,0 +1,3 @@
+Alteramos o arquivo salvar.php atráves do comando "preg_replace" para assim, impedir a invasão pelo SQL INJECTION.
+
+DATA:22/07/2019

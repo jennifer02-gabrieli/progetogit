@@ -1,13 +1,13 @@
 <?php  
-$descricao = $_POST['descricao'];
-$conteudo = $_POST['conteudo'];
-$dataEnvio = $_POST['DataEnvio'];
+$descricao = preg_replace('/[^[:alpha:]_]/', '', $_POST['descricao']);
+$conteudo =  preg_replace('/[^[:alpha:]_]/', '', $_POST['conteudo']);
+$dataEnvio = preg_replace('/[^[:alpha:]_]/', '', $_POST['DataEnvio']);
 
 $conecta = new mysqli("localhost","kinyxapp_app","12345","kinyxapp_wyllian");
 // Caso a conexão seja reprovada, exibe na tela uma mensagem de erro
-if (!$conecta) die ("<h1>Falha na coneco com o Banco de Dados!</h1>");
+if (!$conecta) die ("<h1>Falha na conexão com o Banco de Dados!</h1>");
 // Caso a conexão seja aprovada, então conecta o Banco de Dados.    
-//$db = mysql_select_db($conecta, "wyllian");
+//$db = mysql_select_db($conecta, "wyllian") ;
 
 
 //$cria = "CREATE TABLE usuarios (codigo INT AUTO_INCREMENT PRIMARY KEY, usuario VARCHAR(40), senha VARCHAR(50))";
